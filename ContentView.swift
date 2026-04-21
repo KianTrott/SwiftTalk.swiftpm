@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        
+        NavigationStack{
         Text("SwiftTalk")
             .bold()
             .offset(x: 0, y: -300)
@@ -30,7 +30,13 @@ struct ContentView: View {
             .offset(x: -160, y: -200)
             .rotationEffect(.degrees(22))
         
-    
-       
+            
+                NavigationLink("English", destination: ESView())
+                .font(.system(size: 50, weight: .regular, design: .default))
+                .foregroundStyle(.black)
+                .underline()
+            
+            
+        }
     }
 }
