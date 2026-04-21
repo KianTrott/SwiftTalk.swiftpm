@@ -7,31 +7,31 @@ struct ContentView: View {
         Text("SwiftTalk")
             .bold()
             .offset(x: 0, y: -300)
-            .font(.largeTitle)
-        
+            .font(.system(size: 60, weight: .regular, design: .default))
+            .padding()
         
         Text("Welcome")
-            .font(.title)
-            .offset(x: -350, y: -100)
+                .font(.system(size: 40, weight: .regular, design: .default))
+            .offset(x: -350, y: -90)
             .rotationEffect(.degrees(22))
         
         Text("Bienvenido")
-            .font(.title)
+                .font(.system(size: 40, weight: .regular, design: .default))
             .offset(x: -275, y: -100)
             .rotationEffect(.degrees(345))
         
         Text("Empfang")
-            .font(.title)
+                .font(.system(size: 40, weight: .regular, design: .default))
             .offset(x: 350, y: -190)
             .rotationEffect(.degrees(345))
         
         Text("Bienvenu")
-            .font(.title)
+                .font(.system(size: 40, weight: .regular, design: .default))
             .offset(x: 240, y: -190)
             .rotationEffect(.degrees(22))
         
             
-                NavigationLink("English", destination: ESView())
+                NavigationLink("English", destination: EnglishView())
                 .font(.system(size: 40, weight: .regular, design: .default))
                 .foregroundStyle(.black)
                 .underline()
