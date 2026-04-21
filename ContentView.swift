@@ -22,19 +22,20 @@ struct ContentView: View {
         
         Text("Empfang")
             .font(.title)
-            .offset(x: 350, y: -175)
+            .offset(x: 350, y: -190)
             .rotationEffect(.degrees(345))
         
         Text("Bienvenu")
             .font(.title)
-            .offset(x: -160, y: -200)
-            .rotationEffect(.degrees(315))
+            .offset(x: 240, y: -190)
+            .rotationEffect(.degrees(22))
         
             
                 NavigationLink("English", destination: ESView())
-                .font(.system(size: 50, weight: .regular, design: .default))
+                .font(.system(size: 40, weight: .regular, design: .default))
                 .foregroundStyle(.black)
                 .underline()
+                .offset(x: 0, y: -300)
             
             
         }
