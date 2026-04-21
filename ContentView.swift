@@ -17,18 +17,18 @@ struct ContentView: View {
         
         Text("Bienvenido")
             .font(.title)
-            .offset(x: -160, y: -200)
+            .offset(x: -275, y: -100)
             .rotationEffect(.degrees(345))
         
         Text("Empfang")
             .font(.title)
-            .offset(x: 350, y: -100)
+            .offset(x: 350, y: -175)
             .rotationEffect(.degrees(345))
         
         Text("Bienvenu")
             .font(.title)
             .offset(x: -160, y: -200)
-            .rotationEffect(.degrees(22))
+            .rotationEffect(.degrees(315))
         
             
                 NavigationLink("English", destination: ESView())
