@@ -74,16 +74,6 @@ struct EnglishView: View {
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -485)
                 
-                
-                VStack {
-                    Text("Translate")
-                        .bold()
-                        .font(.system(size: 60, weight: .regular, design: .default))
-                        .offset(x: -230, y: -570)
-                    
-                    
-                    
-                }
                 .toolbar {
                     ToolbarItem(placement: .principal) {
                         HStack {
