@@ -74,17 +74,21 @@ struct EnglishView: View {
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -485)
                 
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        HStack {
-                            NavigationLink(destination: ContentView()) {
-                                Image(systemName: "house")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
+                    .toolbar {
+                        ToolbarItem(placement: .principal) {
+                            HStack {
+                                NavigationLink(destination: ContentView()) {
+                                    Image(systemName: "house")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 100)
+                                }
+                                
+                                Spacer(minLength: 900)
                             }
                             
-                            Spacer(minLength: 900)
+                            
+                            
                         }
                         
                         
@@ -97,5 +101,4 @@ struct EnglishView: View {
         }
     }
     
-    
-    }
+}
