@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct ESView: View {
+struct EnglishView: View {
     var body: some View {
         
         
