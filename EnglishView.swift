@@ -91,7 +91,11 @@ struct EnglishView: View {
                             
                         }
                         
+                        
+                        
                     }
+                    
+                }
             }.navigationBarBackButtonHidden()
             
         }
