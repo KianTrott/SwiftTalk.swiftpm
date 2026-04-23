@@ -42,6 +42,7 @@ struct ContentView: View {
             .foregroundStyle(.black)
             .underline()
             .offset(x: 0, y: -300)
+            
         
             
             NavigationLink("Français 🇫🇷", destination: FrenchView())
