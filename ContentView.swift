@@ -37,20 +37,20 @@ struct ContentView: View {
                 .underline()
                 .offset(x: 0, y: -300)
             
-            NavigationLink("Español 🇪🇸", destination: EnglishView())
+            NavigationLink("Español 🇪🇸", destination: SpanishView())
             .font(.system(size: 40, weight: .regular, design: .default))
             .foregroundStyle(.black)
             .underline()
             .offset(x: 0, y: -300)
         
             
-            NavigationLink("Français 🇫🇷", destination: EnglishView())
+            NavigationLink("Français 🇫🇷", destination: FrenchView())
             .font(.system(size: 40, weight: .regular, design: .default))
             .foregroundStyle(.black)
             .underline()
             .offset(x: 0, y: -300)
             
-            NavigationLink("Deutsch 🇩🇪", destination: EnglishView())
+            NavigationLink("Deutsch 🇩🇪", destination: GermanView())
             .font(.system(size: 40, weight: .regular, design: .default))
             .foregroundStyle(.black)
             .underline()
