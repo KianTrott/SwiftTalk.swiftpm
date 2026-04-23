@@ -22,24 +22,41 @@ struct ContentView: View {
         
         Text("Empfang")
                 .font(.system(size: 40, weight: .regular, design: .default))
-            .offset(x: 350, y: -190)
+            .offset(x: 350, y: -200)
             .rotationEffect(.degrees(345))
         
         Text("Bienvenu")
                 .font(.system(size: 40, weight: .regular, design: .default))
-            .offset(x: 240, y: -190)
+            .offset(x: 240, y: -200)
             .rotationEffect(.degrees(22))
         
             
-                NavigationLink("English", destination: EnglishView())
+                NavigationLink("English 🇬🇧", destination: EnglishView())
                 .font(.system(size: 40, weight: .regular, design: .default))
                 .foregroundStyle(.black)
                 .underline()
                 .offset(x: 0, y: -300)
             
+            NavigationLink("Español 🇪🇸", destination: EnglishView())
+            .font(.system(size: 40, weight: .regular, design: .default))
+            .foregroundStyle(.black)
+            .underline()
+            .offset(x: 0, y: -300)
+        
             
+            NavigationLink("Français 🇫🇷", destination: EnglishView())
+            .font(.system(size: 40, weight: .regular, design: .default))
+            .foregroundStyle(.black)
+            .underline()
+            .offset(x: 0, y: -300)
             
-            
+            NavigationLink("Deutsch 🇩🇪", destination: EnglishView())
+            .font(.system(size: 40, weight: .regular, design: .default))
+            .foregroundStyle(.black)
+            .underline()
+            .offset(x: 0, y: -300)
+        
+        
         }
     }
 }
