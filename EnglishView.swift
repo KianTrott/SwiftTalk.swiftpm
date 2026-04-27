@@ -106,4 +106,7 @@ struct EnglishView: View {
             
         }
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> main
