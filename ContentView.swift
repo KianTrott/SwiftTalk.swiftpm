@@ -33,13 +33,13 @@ struct ContentView: View {
             
                 NavigationLink("English 🇬🇧", destination: EnglishView())
                 .font(.system(size: 40, weight: .regular, design: .default))
-                .foregroundStyle(.black)
+                .foregroundStyle(.primary)
                 .underline()
                 .offset(x: 0, y: -300)
             
             NavigationLink("Español 🇪🇸", destination: SpanishView())
             .font(.system(size: 40, weight: .regular, design: .default))
-            .foregroundStyle(.black)
+            .foregroundStyle(.primary)
             .underline()
             .offset(x: 0, y: -300)
             
@@ -47,13 +47,13 @@ struct ContentView: View {
             
             NavigationLink("Français 🇫🇷", destination: FrenchView())
             .font(.system(size: 40, weight: .regular, design: .default))
-            .foregroundStyle(.black)
+            .foregroundStyle(.primary)
             .underline()
             .offset(x: 0, y: -300)
             
             NavigationLink("Deutsch 🇩🇪", destination: GermanView())
             .font(.system(size: 40, weight: .regular, design: .default))
-            .foregroundStyle(.black)
+            .foregroundStyle(.primary)
             .underline()
             .offset(x: 0, y: -300)
         

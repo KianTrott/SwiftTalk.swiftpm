@@ -50,16 +50,22 @@ struct EnglishView: View {
                     .font(.system(size: 60, weight: .regular, design: .default))
                     .offset(x: 230, y: -540)
                 
-                Text("Matching-Spanish")
+                NavigationLink("Matching-Spanish", destination: SMatchingView())
+                    .foregroundStyle(.primary)
                     .font(.system(size: 50, weight: .regular, design: .default))
+                    .underline()
                     .offset(x: 250, y: -530)
                 
-                Text("Matching-French")
+                NavigationLink("Matching-French", destination: FMatchingView())
+                    .foregroundStyle(.primary)
                     .font(.system(size: 50, weight: .regular, design: .default))
+                    .underline()
                     .offset(x: 250, y: -525)
                 
-                Text("Matching-German")
+                NavigationLink("Matching-German", destination: GMatchingView())
+                    .foregroundStyle(.primary)
                     .font(.system(size: 50, weight: .regular, design: .default))
+                    .underline()
                     .offset(x: 250, y: -515)
                 
                 Text("Cards-Spanish")
@@ -101,4 +107,3 @@ struct EnglishView: View {
         }
     }
     
-}
