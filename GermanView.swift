@@ -56,7 +56,7 @@ struct GermanView: View {
                     .offset(x: 250, y: -530)
                 
                 Text("Zuordnung-Französisch")
-                    .font(.system(size: 50, weight: .regular, design: .default))
+                    .font(.system(size: 48, weight: .regular, design: .default))
                     .offset(x: 250, y: -525)
                 
                 Text("Zuordnung-Spanisch")
