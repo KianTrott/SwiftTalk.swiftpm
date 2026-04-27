@@ -68,16 +68,22 @@ struct EnglishView: View {
                     .underline()
                     .offset(x: 250, y: -515)
                 
-                Text("Cards-Spanish")
+                NavigationLink("Cards-Spanish", destination: SCardsView())
                     .font(.system(size: 50, weight: .regular, design: .default))
+                    .underline()
+                    .foregroundStyle(.primary)
                     .offset(x: 250, y: -505)
                 
-                Text("Cards-French")
+                NavigationLink("Cards-French", destination: FCardsView())
                     .font(.system(size: 50, weight: .regular, design: .default))
+                    .underline()
+                    .foregroundStyle(.primary)
                     .offset(x: 250, y: -495)
                 
-                Text("Cards-German")
+                NavigationLink("Cards-German", destination: GCardsView())
                     .font(.system(size: 50, weight: .regular, design: .default))
+                    .underline()
+                    .foregroundStyle(.primary)
                     .offset(x: 250, y: -485)
                 
                     .toolbar {
