@@ -51,27 +51,27 @@ struct GermanView: View {
                     .font(.system(size: 60, weight: .regular, design: .default))
                     .offset(x: 230, y: -540)
                 
-                Text("Emparejar-Englisch")
+                Text("Zuordnung-Englisch")
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -530)
                 
-                Text("Emparejar-Französisch")
+                Text("Zuordnung-Französisch")
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -525)
                 
-                Text("Emparejar-Spanisch")
+                Text("Zuordnung-Spanisch")
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -515)
                 
-                Text("Cartas-Englisch")
+                Text("Karten-Englisch")
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -505)
                 
-                Text("Cartas-Französisch")
+                Text("Karten-Französisch")
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -495)
                 
-                Text("Cartas-Spanisch")
+                Text("Karten-Spanisch")
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -485)
                 
