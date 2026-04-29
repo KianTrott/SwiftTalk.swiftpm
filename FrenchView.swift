@@ -94,9 +94,9 @@ struct FrenchView: View {
                         
                         
                     }
-                    
-                }
-            }.navigationBarBackButtonHidden()
-            
-        }
+                
+            }
+        }.navigationBarBackButtonHidden()
+        
     }
+}
