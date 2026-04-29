@@ -7,12 +7,12 @@ struct ESTranslateView: View {
     var body: some View {
         Text("Translate")
             .bold()
-            .offset(x: 0, y: -330)
+            .offset(x: 0, y: -460)
             .font(.system(size: 80, weight: .regular, design: .default))
         
         Divider()
             .background(Color.black)
-            .offset(x: 0, y: -320 )
+            .offset(x: 0, y: -480 )
         HStack{
             VStack {
                 Text("English")
@@ -46,6 +46,21 @@ struct ESTranslateView: View {
                     Text("Hola")
                         .font(Font.system(size: 40, weight: .regular, design: .default))
                         .frame(width: 300, height: 200, alignment: .topLeading)
+                    
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                HStack {
+                                    NavigationLink(destination: EnglishView()) {
+                                        Image(systemName: "house")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 100, height: 100)
+                                    }
+                                    Spacer(minLength: 900)
+                                }
+                            }
+                        }
+                        .navigationBarBackButtonHidden()
                 }
             }
         }
