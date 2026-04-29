@@ -71,11 +71,13 @@ struct SpanishView: View {
                     .offset(x: 250, y: -515)
                     .foregroundStyle(.primary)
                     .underline()
+                
                 NavigationLink("Cartas-Inglés", destination: SECardsView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -505)
                     .foregroundStyle(.primary)
                     .underline()
+                
                 NavigationLink("Cartas-Francés", destination: SFCardsView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -495)
