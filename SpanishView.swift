@@ -25,18 +25,23 @@ struct SpanishView: View {
                     .font(.system(size: 60, weight: .regular, design: .default))
                     .offset(x: -230, y: -230)
                 
-                Text("Inglés")
+                
+                NavigationLink("Inglés", destination: SETranslateView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -200)
+                    .foregroundStyle(.primary)
+                    .underline()
                 
-                Text("Francés")
+                NavigationLink("Francés", destination: SFTranslateView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -190)
-                
-                Text("Alemán")
+                    .foregroundStyle(.primary)
+                    .underline()
+                NavigationLink("Alemán", destination: SGTranslateView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -180)
-                
+                    .foregroundStyle(.primary)
+                    .underline()
                 Divider()
                     .background(Color.black)
                     .rotationEffect(.degrees(90))
@@ -51,30 +56,36 @@ struct SpanishView: View {
                     .font(.system(size: 60, weight: .regular, design: .default))
                     .offset(x: 230, y: -540)
                 
-                Text("Emparejar-Inglés")
+                NavigationLink("Emparejar-Inglés", destination: SEMatchingView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -530)
-                
-                Text("Emparejar-Francés")
+                    .foregroundStyle(.primary)
+                    .underline()
+                NavigationLink("Emparejar-Francés", destination: SFMatchingView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -525)
-                
-                Text("Emparejar-Alemán")
+                    .foregroundStyle(.primary)
+                    .underline()
+                NavigationLink("Emparejar-Alemán", destination: SGMatchingView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -515)
-                
-                Text("Cartas-Inglés")
+                    .foregroundStyle(.primary)
+                    .underline()
+                NavigationLink("Cartas-Inglés", destination: SECardsView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -505)
-                
-                Text("Cartas-Francés")
+                    .foregroundStyle(.primary)
+                    .underline()
+                NavigationLink("Cartas-Francés", destination: SFCardsView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -495)
-                
-                Text("Cartas-Alemán")
+                    .foregroundStyle(.primary)
+                    .underline()
+                NavigationLink("Cartas-Alemán", destination: SGCardsView())
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: 250, y: -485)
-                
+                    .foregroundStyle(.primary)
+                    .underline()
                     .toolbar {
                         ToolbarItem(placement: .principal) {
                             HStack {

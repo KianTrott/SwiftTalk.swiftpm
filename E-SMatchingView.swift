@@ -136,6 +136,3 @@ struct ESMatchingView: View {
                 .navigationBarBackButtonHidden()
         }
     }
-#Preview {
-    ESMatchingView()
-}
