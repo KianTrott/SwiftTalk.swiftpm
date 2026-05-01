@@ -1,5 +1,6 @@
 
 import SwiftUI
+import UIKit
 
 
 struct ESTranslateView: View {
@@ -13,40 +14,62 @@ struct ESTranslateView: View {
         Divider()
             .background(Color.black)
             .offset(x: 0, y: -480 )
-        HStack{
-            VStack {
-                Text("English")
-                    .font(.system(size: 60, weight: .regular, design: .default))
-                
-                TextField("Enter text here", text: $englishText)
-                    .font(Font.system(size: 40, weight: .regular, design: .default))
-                    .frame(width: 300, height: 200, alignment: .topLeading)
-                    .border(.black)
-            }
-
-            Button {
-                
-            } label: {
-                Image(systemName: "arrow.left.arrow.right")
-                    .frame(width: 20, height: 200, alignment: .bottom)
-                    .font(.system(size: 60, weight: .regular, design: .default))
-                    .foregroundStyle(.black)
-            }
-                .padding(50)
-                .offset(x: 0, y: -15)
-            
-            VStack{
-                Text("Spanish")
-                    .font(.system(size: 60, weight: .regular, design: .default))
-                ZStack{
-                    Rectangle()
-                        .frame(width: 300, height: 200, alignment: .topLeading)
-                        .border(.black)
-                        .foregroundStyle(.white)
-                    Text("Hola")
+        VStack{
+            HStack{
+                VStack {
+                    Text("English")
+                        .font(.system(size: 60, weight: .regular, design: .default))
+                    
+                    TextField("Enter text here", text: $englishText)
                         .font(Font.system(size: 40, weight: .regular, design: .default))
                         .frame(width: 300, height: 200, alignment: .topLeading)
+                        .border(.black)
+                }
+                
+                Button {
                     
+                } label: {
+                    Image(systemName: "arrow.left.arrow.right")
+                        .frame(width: 20, height: 200, alignment: .bottom)
+                        .font(.system(size: 60, weight: .regular, design: .default))
+                        .foregroundStyle(.black)
+                }
+                .padding(50)
+                .offset(x: 0, y: -15)
+                
+                VStack{
+                    Text("Spanish")
+                        .font(.system(size: 60, weight: .regular, design: .default))
+                    ZStack{
+                        Rectangle()
+                            .frame(width: 300, height: 200, alignment: .topLeading)
+                            .border(.black)
+                            .foregroundStyle(.white)
+                        Text("Hola")
+                            .font(Font.system(size: 40, weight: .regular, design: .default))
+                            .frame(width: 300, height: 200, alignment: .topLeading)
+                        
+                        Button {
+                            URLSession.shared.dataTask(with: url) { data, response, error in
+                                //    print(data)
+                                if let data = data {
+                                    //        print(data)
+                                    //        print(response)
+                                    //    print(error)
+                                    
+                                    if let json = try? JSONSerialization.jsonObject(with: data) {
+                                        print(json)
+                                    }
+                                }
+                            }
+                            .resume()
+                        } label: {
+                            ZStack{
+                                
+                            }
+                        }
+
+                        
                         .toolbar {
                             ToolbarItem(placement: .principal) {
                                 HStack {
@@ -61,11 +84,11 @@ struct ESTranslateView: View {
                             }
                         }
                         .navigationBarBackButtonHidden()
+                    }
                 }
+                let url = URL(string: "https://api.mymemory.translated.net/get?q=\(englishText)&langpair=en|es")!
             }
         }
     }
 }
-#Preview {
-    ESTranslateView(englishText: ESTranslateView().englishText)
-}
+//api.mymemory.translated.net/get?q=red&langpair=en|es
