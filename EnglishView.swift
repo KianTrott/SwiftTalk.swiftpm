@@ -24,11 +24,11 @@ struct EnglishView: View {
                     .font(.system(size: 60, weight: .regular, design: .default))
                     .offset(x: -230, y: -230)
                 
-                NavigationLink("Spanish", destination: ESTranslateView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .underline()
-                    .foregroundStyle(.primary)
-                    .offset(x: -230, y: -200)
+//                NavigationLink("Spanish", destination: ESTranslateView())
+//                    .font(.system(size: 50, weight: .regular, design: .default))
+//                    .underline()
+//                    .foregroundStyle(.primary)
+//                    .offset(x: -230, y: -200)
                 
                 NavigationLink("French", destination: EFTranslateView())
                     .font(.system(size: 50, weight: .regular, design: .default))
