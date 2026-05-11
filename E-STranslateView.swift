@@ -8,12 +8,12 @@ struct ESTranslateView: View {
     var body: some View {
         Text("Translate")
             .bold()
-            .offset(x: 0, y: -420)
+            .offset(x: 0, y: -1)
             .font(.system(size: 80, weight: .regular, design: .default))
         
         Divider()
             .background(Color.black)
-            .offset(x: 0, y: -470 )
+            .offset(x: 0, y: -4 )
         
         VStack{
             HStack{
