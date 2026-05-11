@@ -56,7 +56,7 @@ struct SETranslateView: View {
                         .toolbar {
                             ToolbarItem(placement: .principal) {
                                 HStack {
-                                    NavigationLink(destination: EnglishView()) {
+                                    NavigationLink(destination: SpanishView()) {
                                         Image(systemName: "house")
                                             .resizable()
                                             .scaledToFit()
