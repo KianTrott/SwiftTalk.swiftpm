@@ -1,99 +1,99 @@
 
-import SwiftUI
-import UIKit
-
-
-struct ESTranslateView: View {
-    @State var englishText: String = ""
-    var body: some View {
-        Text("Translate")
-            .bold()
-            .offset(x: 0, y: -460)
-            .font(.system(size: 80, weight: .regular, design: .default))
-        
-        Divider()
-            .background(Color.black)
-            .offset(x: 0, y: -480 )
-        VStack{
-            HStack{
-                VStack {
-                    Text("English")
-                        .font(.system(size: 60, weight: .regular, design: .default))
-                    
-                    TextField("Enter text here", text: $englishText)
-                        .font(Font.system(size: 40, weight: .regular, design: .default))
-                        .frame(width: 300, height: 200, alignment: .topLeading)
-                        .border(.black)
-                }
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "arrow.left.arrow.right")
-                        .frame(width: 20, height: 200, alignment: .bottom)
-                        .font(.system(size: 60, weight: .regular, design: .default))
-                        .foregroundStyle(.black)
-                }
-                .padding(50)
-                .offset(x: 0, y: -15)
-                
-                VStack{
-                    Text("Spanish")
-                        .font(.system(size: 60, weight: .regular, design: .default))
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 300, height: 200, alignment: .topLeading)
-                            .border(.black)
-                            .foregroundStyle(.white)
-                        Text("Hola")
-                            .font(Font.system(size: 40, weight: .regular, design: .default))
-                            .frame(width: 300, height: 200, alignment: .topLeading)
-                        
-                        Button {
-                            URLSession.shared.dataTask(with: url) { data, response, error in
-                                //    print(data)
-                                if let data = data {
-                                    //        print(data)
-                                    //        print(response)
-                                    //    print(error)
-                                    
-                                    if let json = try? JSONSerialization.jsonObject(with: data) {
-                                        print(json)
-                                    }
-                                }
-                            }
-                            .resume()
-                        } label: {
-                            ZStack{
-                               RoundedRectangle(cornerRadius: 35)
-                                    .fill(.blue)
-                                    .frame(width: 200, height: 100)
-                                    Text("Translate")
-                                    .foregroundStyle(.white)
-                                
-                            }
-                        }
-
-                        
-                        .toolbar {
-                            ToolbarItem(placement: .principal) {
-                                HStack {
-                                    NavigationLink(destination: EnglishView()) {
-                                        Image(systemName: "house")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 100, height: 100)
-                                    }
-                                    Spacer(minLength: 900)
-                                }
-                            }
-                        }
-                        .navigationBarBackButtonHidden()
-                    }
-                }
-                let url = URL(string: "https://api.mymemory.translated.net/get?q=\(englishText)&langpair=en|es")!
-            }
-        }
-    }
-}
+//import SwiftUI
+//import UIKit
+//
+//
+//struct ESTranslateView: View {
+//    @State var englishText: String = ""
+//    var body: some View {
+//        Text("Translate")
+//            .bold()
+//            .offset(x: 0, y: -460)
+//            .font(.system(size: 80, weight: .regular, design: .default))
+//        
+//        Divider()
+//            .background(Color.black)
+//            .offset(x: 0, y: -480 )
+//        VStack{
+//            HStack{
+//                VStack {
+//                    Text("English")
+//                        .font(.system(size: 60, weight: .regular, design: .default))
+//                    
+//                    TextField("Enter text here", text: $englishText)
+//                        .font(Font.system(size: 40, weight: .regular, design: .default))
+//                        .frame(width: 300, height: 200, alignment: .topLeading)
+//                        .border(.black)
+//                }
+//                
+//                Button {
+//                    
+//                } label: {
+//                    Image(systemName: "arrow.left.arrow.right")
+//                        .frame(width: 20, height: 200, alignment: .bottom)
+//                        .font(.system(size: 60, weight: .regular, design: .default))
+//                        .foregroundStyle(.black)
+//                }
+//                .padding(50)
+//                .offset(x: 0, y: -15)
+//                
+//                VStack{
+//                    Text("Spanish")
+//                        .font(.system(size: 60, weight: .regular, design: .default))
+//                    ZStack{
+//                        Rectangle()
+//                            .frame(width: 300, height: 200, alignment: .topLeading)
+//                            .border(.black)
+//                            .foregroundStyle(.white)
+//                        Text("Hola")
+//                            .font(Font.system(size: 40, weight: .regular, design: .default))
+//                            .frame(width: 300, height: 200, alignment: .topLeading)
+//                        
+//                        Button {
+//                            URLSession.shared.dataTask(with: url) { data, response, error in
+//                                //    print(data)
+//                                if let data = data {
+//                                    //        print(data)
+//                                    //        print(response)
+//                                    //    print(error)
+//                                    
+//                                    if let json = try? JSONSerialization.jsonObject(with: data) {
+//                                        print(json)
+//                                    }
+//                                }
+//                            }
+//                            .resume()
+//                        } label: {
+//                            ZStack{
+//                               RoundedRectangle(cornerRadius: 35)
+//                                    .fill(.blue)
+//                                    .frame(width: 200, height: 100)
+//                                    Text("Translate")
+//                                    .foregroundStyle(.white)
+//                                
+//                            }
+//                        }
+//
+//                        
+//                        .toolbar {
+//                            ToolbarItem(placement: .principal) {
+//                                HStack {
+//                                    NavigationLink(destination: EnglishView()) {
+//                                        Image(systemName: "house")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 100, height: 100)
+//                                    }
+//                                    Spacer(minLength: 900)
+//                                }
+//                            }
+//                        }
+//                        .navigationBarBackButtonHidden()
+//                    }
+//                }
+//                let url = URL(string: "https://api.mymemory.translated.net/get?q=\(englishText)&langpair=en|es")!
+//            }
+//        }
+//    }
+//}
 //api.mymemory.translated.net/get?q=red&langpair=en|es
