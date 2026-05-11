@@ -6,7 +6,7 @@ struct ContentView: View {
         NavigationStack{
             Text("SwiftTalk")
                 .bold()
-                .offset(x: 0, y: -300)
+                .offset(x: 0, y: -200)
                 .font(.system(size: 60, weight: .regular, design: .default))
                 .padding()
             

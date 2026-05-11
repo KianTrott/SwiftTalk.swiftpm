@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct EnglishView: View {
+    @State var englishText: String = ""
     var body: some View {
         NavigationStack{
             
@@ -24,19 +25,19 @@ struct EnglishView: View {
                     .font(.system(size: 60, weight: .regular, design: .default))
                     .offset(x: -230, y: -230)
                 
-//                NavigationLink("Spanish", destination: ESTranslateView())
-//                    .font(.system(size: 50, weight: .regular, design: .default))
-//                    .underline()
-//                    .foregroundStyle(.primary)
-//                    .offset(x: -230, y: -200)
+                NavigationLink("Spanish", destination: ESTranslateView(englishText: englishText, spanishText: ""))
+                    .font(.system(size: 50, weight: .regular, design: .default))
+                    .underline()
+                    .foregroundStyle(.primary)
+                    .offset(x: -230, y: -200)
                 
-                NavigationLink("French", destination: EFTranslateView())
+                NavigationLink("French", destination: EFTranslateView(englishText: englishText))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
                     .foregroundStyle(.primary)
                     .offset(x: -230, y: -190)
                 
-                NavigationLink("German", destination: EGTranslateView())
+                NavigationLink("German", destination: EGTranslateView(englishText: englishText))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
                     .foregroundStyle(.primary)
@@ -118,3 +119,4 @@ struct EnglishView: View {
         
     }
 }
+
