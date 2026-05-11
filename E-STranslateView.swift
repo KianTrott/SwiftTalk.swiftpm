@@ -65,6 +65,11 @@ struct ESTranslateView: View {
                             .resume()
                         } label: {
                             ZStack{
+                               RoundedRectangle(cornerRadius: 35)
+                                    .fill(.blue)
+                                    .frame(width: 200, height: 100)
+                                    Text("Translate")
+                                    .foregroundStyle(.white)
                                 
                             }
                         }
