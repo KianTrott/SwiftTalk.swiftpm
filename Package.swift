@@ -10,7 +10,7 @@ import AppleProductTypes
 let package = Package(
     name: "SwiftTalk",
     platforms: [
-        .iOS("16.0")
+        .iOS("26.0")
     ],
     products: [
         .iOSApplication(
@@ -39,5 +39,5 @@ let package = Package(
             path: "."
         )
     ],
-    swiftLanguageVersions: [.version("6")]
+    swiftLanguageModes: [.version("6")]
 )
