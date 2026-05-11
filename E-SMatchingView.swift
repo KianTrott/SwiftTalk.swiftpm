@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ESMatchingView: View {
+    @State private var time = 0
+    @State private var timerRunning = false
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View {
         VStack {
             Text("Matching")
@@ -17,6 +20,8 @@ struct ESMatchingView: View {
             Divider()
                 .background(Color.black)
                 .offset(x: 0, y: -360)
+            
+            
         }
         HStack{
             
@@ -116,8 +121,23 @@ struct ESMatchingView: View {
                         .frame(width: 150, height: 150)
                         .border(Color.black, width: 4)
                         .foregroundStyle(.white)
+                    
+                    
                 }
+                
             })
+        }
+        Text("\(time)")
+            .font(.system(size: 50, weight: .regular, design: .default))
+        
+            Button(timerRunning ? "Stop" : "Start" ) {
+            timerRunning.toggle()
+            
+        }
+        .onReceive(timer) { _ in
+            if timerRunning {
+                time += 1
+            }
         }
         
                 .toolbar {
