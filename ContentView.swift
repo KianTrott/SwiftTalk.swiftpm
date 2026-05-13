@@ -57,11 +57,8 @@ struct ContentView: View {
                 .offset(x: 0, y: -300)
             
             
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 
 
-#Preview {
-    ContentView()
-}
