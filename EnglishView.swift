@@ -31,13 +31,13 @@ struct EnglishView: View {
                     .foregroundStyle(.primary)
                     .offset(x: -230, y: -200)
                 
-                NavigationLink("French", destination: EFTranslateView(englishText: englishText))
+                NavigationLink("French", destination: EFTranslateView(englishText: englishText, frenchText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
                     .foregroundStyle(.primary)
                     .offset(x: -230, y: -190)
                 
-                NavigationLink("German", destination: EGTranslateView(englishText: englishText))
+                NavigationLink("German", destination: EGTranslateView(englishText: englishText, germanText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
                     .foregroundStyle(.primary)

@@ -44,7 +44,6 @@ struct ContentView: View {
                 .offset(x: 0, y: -300)
             
             
-            
             NavigationLink("Français 🇫🇷", destination: FrenchView())
                 .font(.system(size: 40, weight: .regular, design: .default))
                 .foregroundStyle(.primary)
