@@ -14,34 +14,34 @@ struct EnglishView: View {
             VStack {
                 Text("Select a language")
                     .font(.system(size: 90, weight: .regular, design: .default))
-                    .offset(x: 0, y: -230)
+                    .offset(x: 0, y: -220)
                 
                 Divider()
                     .background(Color.black)
-                    .offset(x: 0, y: -250 )
+                    .offset(x: 0, y: -250)
                 
                 Text("Translate")
                     .bold()
                     .font(.system(size: 60, weight: .regular, design: .default))
-                    .offset(x: -230, y: -230)
+                    .offset(x: -200, y: -230)
                 
                 NavigationLink("Spanish", destination: ESTranslateView(englishText: englishText, spanishText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
                     .foregroundStyle(.primary)
-                    .offset(x: -230, y: -200)
+                    .offset(x: -200, y: -200)
                 
                 NavigationLink("French", destination: EFTranslateView(englishText: englishText, frenchText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
                     .foregroundStyle(.primary)
-                    .offset(x: -230, y: -190)
+                    .offset(x: -200, y: -190)
                 
                 NavigationLink("German", destination: EGTranslateView(englishText: englishText, germanText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
                     .foregroundStyle(.primary)
-                    .offset(x: -230, y: -180)
+                    .offset(x: -200, y: -180)
                 
                 Divider()
                     .background(Color.black)
@@ -55,43 +55,58 @@ struct EnglishView: View {
                 Text("Learning")
                     .bold()
                     .font(.system(size: 60, weight: .regular, design: .default))
-                    .offset(x: 230, y: -540)
+                    .offset(x: 200, y: -540)
                 
                 NavigationLink("Matching-Spanish", destination: ESMatchingView())
                     .foregroundStyle(.primary)
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
-                    .offset(x: 250, y: -530)
+                    .offset(x: 220, y: -530)
                 
                 NavigationLink("Matching-French", destination: EFMatchingView())
                     .foregroundStyle(.primary)
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
-                    .offset(x: 250, y: -525)
+                    .offset(x: 220, y: -525)
                 
                 NavigationLink("Matching-German", destination: EGMatchingView())
                     .foregroundStyle(.primary)
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .underline()
-                    .offset(x: 250, y: -515)
+                    .offset(x: 220, y: -515)
                 
 //                NavigationLink("Cards-Spanish", destination: ESCardsView())
 //                    .font(.system(size: 50, weight: .regular, design: .default))
 //                    .underline()
 //                    .foregroundStyle(.primary)
-//                    .offset(x: 250, y: -505)
+//                    .offset(x: 220, y: -505)
 //                
 //                NavigationLink("Cards-French", destination: EFCardsView())
 //                    .font(.system(size: 50, weight: .regular, design: .default))
 //                    .underline()
 //                    .foregroundStyle(.primary)
-//                    .offset(x: 250, y: -495)
+//                    .offset(x: 220, y: -495)
 //                
 //                NavigationLink("Cards-German", destination: EGCardsView())
 //                    .font(.system(size: 50, weight: .regular, design: .default))
 //                    .underline()
 //                    .foregroundStyle(.primary)
-//                    .offset(x: 250, y: -485)
+//                    .offset(x: 220, y: -485)
+                
+                    .toolbar {
+                        ToolbarItem(placement: .automatic) {
+                            HStack {
+                                NavigationLink(destination: EnglishView()) {
+                                    Image(systemName: "house")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 32, height: 32)
+                                }
+                                Spacer()
+                            }
+                        }
+                    }
+                    .navigationBarBackButtonHidden()
                 
             }
         }
