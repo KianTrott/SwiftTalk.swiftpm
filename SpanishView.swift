@@ -37,11 +37,12 @@ struct SpanishView: View {
                     .offset(x: -230, y: -190)
                     .foregroundStyle(.primary)
                     .underline()
-                NavigationLink("Alemán", destination: SGTranslateView())
+                NavigationLink("Alemán", destination: SGTranslateView(spanishText: "", germanText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -180)
                     .foregroundStyle(.primary)
                     .underline()
+                    
                 Divider()
                     .background(Color.black)
                     .rotationEffect(.degrees(90))
