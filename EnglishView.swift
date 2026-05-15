@@ -50,7 +50,7 @@ struct EnglishView: View {
                 Divider()
                     .background(Color.black)
                     .rotationEffect(.degrees(90))
-                    .offset(x: -40, y: -100 )
+                    .offset(x: -40, y: -145 )
                 
                 Text("Learning")
                     .bold()
