@@ -32,7 +32,7 @@ struct SpanishView: View {
                     .foregroundStyle(.primary)
                     .underline()
                 
-                NavigationLink("Francés", destination: SFTranslateView())
+                NavigationLink("Francés", destination: SFTranslateView(spanishText: "", frenchText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -190)
                     .foregroundStyle(.primary)
