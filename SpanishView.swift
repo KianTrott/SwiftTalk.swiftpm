@@ -73,22 +73,22 @@ struct SpanishView: View {
                     .foregroundStyle(.primary)
                     .underline()
                 
-                NavigationLink("Cartas-Inglés", destination: SECardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .offset(x: 250, y: -505)
-                    .foregroundStyle(.primary)
-                    .underline()
-                
-                NavigationLink("Cartas-Francés", destination: SFCardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .offset(x: 250, y: -495)
-                    .foregroundStyle(.primary)
-                    .underline()
-                NavigationLink("Cartas-Alemán", destination: SGCardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .offset(x: 250, y: -485)
-                    .foregroundStyle(.primary)
-                    .underline()
+//                NavigationLink("Cartas-Inglés", destination: SECardsView())
+//                    .font(.system(size: 50, weight: .regular, design: .default))
+//                    .offset(x: 250, y: -505)
+//                    .foregroundStyle(.primary)
+//                    .underline()
+//                
+//                NavigationLink("Cartas-Francés", destination: SFCardsView())
+//                    .font(.system(size: 50, weight: .regular, design: .default))
+//                    .offset(x: 250, y: -495)
+//                    .foregroundStyle(.primary)
+//                    .underline()
+//                NavigationLink("Cartas-Alemán", destination: SGCardsView())
+//                    .font(.system(size: 50, weight: .regular, design: .default))
+//                    .offset(x: 250, y: -485)
+//                    .foregroundStyle(.primary)
+//                    .underline()
                     .toolbar {
                         ToolbarItem(placement: .principal) {
                             HStack {
