@@ -93,8 +93,10 @@ struct EnglishView: View {
 //                    .foregroundStyle(.primary)
 //                    .offset(x: 220, y: -485)
                 
+                    
             }
         }
         
     }
 }
+	
