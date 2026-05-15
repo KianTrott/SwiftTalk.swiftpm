@@ -42,7 +42,7 @@ struct SpanishView: View {
                     .offset(x: -230, y: -180)
                     .foregroundStyle(.primary)
                     .underline()
-                    
+                
                 Divider()
                     .background(Color.black)
                     .rotationEffect(.degrees(90))
@@ -73,44 +73,45 @@ struct SpanishView: View {
                     .foregroundStyle(.primary)
                     .underline()
                 
-                NavigationLink("Cartas-Inglés", destination: SECardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .offset(x: 250, y: -505)
-                    .foregroundStyle(.primary)
-                    .underline()
+                //                NavigationLink("Cartas-Inglés", destination: SECardsView())
+                //                    .font(.system(size: 50, weight: .regular, design: .default))
+                //                    .offset(x: 250, y: -505)
+                //                    .foregroundStyle(.primary)
+                //                    .underline()
+                //
+                //                NavigationLink("Cartas-Francés", destination: SFCardsView())
+                //                    .font(.system(size: 50, weight: .regular, design: .default))
+                //                    .offset(x: 250, y: -495)
+                //                    .foregroundStyle(.primary)
+                //                    .underline()
+                //                NavigationLink("Cartas-Alemán", destination: SGCardsView())
+                //                    .font(.system(size: 50, weight: .regular, design: .default))
+                //                    .offset(x: 250, y: -485)
+                //                    .foregroundStyle(.primary)
+                //                    .underline()
+                //                    .toolbar {
+                //                        ToolbarItem(placement: .principal) {
+                //                            HStack {
+                //                                NavigationLink(destination: ContentView()) {
+                //                                    Image(systemName: "house")
+                //                                        .resizable()
+                //                                        .scaledToFit()
+                //                                        .frame(width: 100, height: 100)
+                //                                }
+                //
+                //                                Spacer(minLength: 900)
+                //                            }
+                //
+                //
+                //
+                //                        }
+                //
+                //                    }
+                //            }.navigationBarBackButtonHidden()
                 
-                NavigationLink("Cartas-Francés", destination: SFCardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .offset(x: 250, y: -495)
-                    .foregroundStyle(.primary)
-                    .underline()
-                NavigationLink("Cartas-Alemán", destination: SGCardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .offset(x: 250, y: -485)
-                    .foregroundStyle(.primary)
-                    .underline()
-                    .toolbar {
-                        ToolbarItem(placement: .principal) {
-                            HStack {
-                                NavigationLink(destination: ContentView()) {
-                                    Image(systemName: "house")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 100, height: 100)
-                                }
-                                
-                                Spacer(minLength: 900)
-                            }
-                            
-                            
-                            
-                        }
-                        
-                    }
-            }.navigationBarBackButtonHidden()
-            
+            }
         }
+        
+        
     }
-    
-    
 }
