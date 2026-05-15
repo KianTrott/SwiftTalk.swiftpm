@@ -97,7 +97,6 @@ struct ESMatchingView: View {
         do {
             topScoresData = try JSONEncoder().encode(topScores)
         } catch {
-            // ignore encoding errors for now
         }
     }
     
@@ -182,7 +181,7 @@ struct ESMatchingView: View {
             Spacer(minLength: 0)
         }
         .toolbar {
-            ToolbarItem(placement: .principal) {
+            ToolbarItem(placement: .automatic) {
                 HStack {
                     NavigationLink(destination: EnglishView()) {
                         Image(systemName: "house")
