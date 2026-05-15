@@ -75,23 +75,23 @@ struct EnglishView: View {
                     .underline()
                     .offset(x: 250, y: -515)
                 
-                NavigationLink("Cards-Spanish", destination: ESCardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .underline()
-                    .foregroundStyle(.primary)
-                    .offset(x: 250, y: -505)
-                
-                NavigationLink("Cards-French", destination: EFCardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .underline()
-                    .foregroundStyle(.primary)
-                    .offset(x: 250, y: -495)
-                
-                NavigationLink("Cards-German", destination: EGCardsView())
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .underline()
-                    .foregroundStyle(.primary)
-                    .offset(x: 250, y: -485)
+//                NavigationLink("Cards-Spanish", destination: ESCardsView())
+//                    .font(.system(size: 50, weight: .regular, design: .default))
+//                    .underline()
+//                    .foregroundStyle(.primary)
+//                    .offset(x: 250, y: -505)
+//                
+//                NavigationLink("Cards-French", destination: EFCardsView())
+//                    .font(.system(size: 50, weight: .regular, design: .default))
+//                    .underline()
+//                    .foregroundStyle(.primary)
+//                    .offset(x: 250, y: -495)
+//                
+//                NavigationLink("Cards-German", destination: EGCardsView())
+//                    .font(.system(size: 50, weight: .regular, design: .default))
+//                    .underline()
+//                    .foregroundStyle(.primary)
+//                    .offset(x: 250, y: -485)
                 
             }
         }
