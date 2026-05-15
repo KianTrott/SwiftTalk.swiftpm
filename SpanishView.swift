@@ -26,7 +26,7 @@ struct SpanishView: View {
                     .offset(x: -230, y: -230)
                 
                 
-                NavigationLink("Inglés", destination: SETranslateView())
+                NavigationLink("Inglés", destination: SETranslateView(spanishText: "", englishText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -200)
                     .foregroundStyle(.primary)
