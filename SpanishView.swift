@@ -26,22 +26,23 @@ struct SpanishView: View {
                     .offset(x: -230, y: -230)
                 
                 
-                NavigationLink("Inglés", destination: SETranslateView())
+                NavigationLink("Inglés", destination: SETranslateView(spanishText: "", englishText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -200)
                     .foregroundStyle(.primary)
                     .underline()
                 
-                NavigationLink("Francés", destination: SFTranslateView())
+                NavigationLink("Francés", destination: SFTranslateView(spanishText: "", frenchText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -190)
                     .foregroundStyle(.primary)
                     .underline()
-                NavigationLink("Alemán", destination: SGTranslateView())
+                NavigationLink("Alemán", destination: SGTranslateView(spanishText: "", germanText: ""))
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .offset(x: -230, y: -180)
                     .foregroundStyle(.primary)
                     .underline()
+                    
                 Divider()
                     .background(Color.black)
                     .rotationEffect(.degrees(90))
