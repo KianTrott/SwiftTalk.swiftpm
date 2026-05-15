@@ -64,7 +64,7 @@ struct ESMatchingView: View {
         MatchItem(pairID: 13, text: "¿Cómo? ")
     ]
     
-    private func buildDeck() -> [MatchItem] {
+     func buildDeck() -> [MatchItem] {
         let pairs = Dictionary(grouping: samplePairs, by: { $0.pairID })
         let chosenKeys = Array(pairs.keys).shuffled().prefix(5)
         var deck: [MatchItem] = []
@@ -77,14 +77,14 @@ struct ESMatchingView: View {
         return deck.shuffled()
     }
     
-    private func resetGame() {
+    func resetGame() {
         cards = buildDeck()
         selectedWords = []
         time = 0
         isRunning = true
     }
     
-    private func loadTopScores() {
+     func loadTopScores() {
         guard !topScoresData.isEmpty else { topScores = []; return }
         do {
             topScores = try JSONDecoder().decode([Double].self, from: topScoresData)

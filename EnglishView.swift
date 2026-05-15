@@ -94,29 +94,22 @@ struct EnglishView: View {
                     .offset(x: 250, y: -485)
                 
                     .toolbar {
-                        ToolbarItem(placement: .principal) {
+                        ToolbarItem(placement: .automatic) {
                             HStack {
-                                NavigationLink(destination: ContentView()) {
+                                NavigationLink(destination: EnglishView()) {
                                     Image(systemName: "house")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 100, height: 100)
+                                        .frame(width: 32, height: 32)
                                 }
-                                
-                                Spacer(minLength: 900)
+                                Spacer()
                             }
-                            
-                            
-                            
                         }
-                        
-                        
-                        
                     }
+                    .navigationBarBackButtonHidden()
                 
             }
-        }.navigationBarBackButtonHidden()
+        }
         
     }
 }
-
